@@ -170,6 +170,7 @@ html {
 .remember input[type="checkbox"]:checked {
   background-color: white;
   border-color: var(--color-base);
+  border-width: 1.5px 2px 2px 1.5px;
 }
 
 .remember input[type="checkbox"]:checked::after {
