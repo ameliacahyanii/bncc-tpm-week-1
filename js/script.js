@@ -7,4 +7,3 @@ togglePassword.addEventListener("click", () => {
   togglePassword.classList.toggle("ph-eye");
   togglePassword.classList.toggle("ph-eye-slash");
 });
-``
