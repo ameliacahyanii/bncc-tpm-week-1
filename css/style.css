@@ -1,0 +1,231 @@
+:root {
+  --color-primary-100: #8fcef5;
+  --color-primary-500: #4986db;
+  --color-base: #212121;
+  --color-secondary: #616161;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: url(../assets/vivid-blurred-colorful-wallpaper-background.jpg)
+    center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.top-btn {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  padding: 14px 40px;
+  border: 2px solid var(--color-base);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-base);
+  letter-spacing: 0.7px;
+}
+
+/* ===== CARD ===== */
+.card {
+  width: 80%;
+  height: 80%;
+  background: white;
+  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* LEFT IMAGE */
+.left-side {
+  width: 50%;
+  height: 100%;
+  background: url("../assets/image-left.png") center/cover no-repeat;
+}
+
+/* RIGHT SIDE */
+.right-side {
+  width: 50%;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TITLE GRADIENT */
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  background: linear-gradient(90deg, #8fcef5, #4986db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* FORM */
+.login-form {
+  width: 100%;
+}
+
+.input-box {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--color-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-bottom: 6px;
+}
+
+.input-box input {
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+}
+
+/* ===== PASSWORD BOX WITH EYE ICON ===== */
+.password-field {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.password-field input {
+  width: 100%;
+  padding-right: 45px;
+  font-size: 15px;
+  background: transparent;
+  outline: none;
+}
+
+.password-field i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #444;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Checkbox Remember */
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.remember input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--color-base);
+  border-radius: 0;
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.remember input[type="checkbox"]:checked {
+  background-color: white;
+  border-color: var(--color-base);
+}
+
+.remember input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translate(-50%, -50%);
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' fill='%23000000'><path d='M6.173 12.414L2.05 8.293l1.414-1.414L6.173 9.586l6.364-6.364 1.414 1.414z'/></svg>")
+    center/contain no-repeat;
+}
+
+.remember label {
+  font-size: 12px;
+  color: var(--color-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-secondary);
+  cursor: pointer;
+  margin: 0;
+  line-height: 1;
+  transform: translateY(1px);
+}
+
+/* PROCEED BUTTON */
+.proceed-btn {
+  width: 100%;
+  padding: 18px 0;
+  background: var(--color-base);
+  color: white;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* OR TEXT */
+.or {
+  text-align: center;
+  margin: 10px 0 5px;
+  font-size: 13px;
+}
+
+/* SOCIAL ICONS */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.social img {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* FOOTER BOTTOM */
+.footer {
+  font-size: 11px;
+  text-align: center;
+  color: #444;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}

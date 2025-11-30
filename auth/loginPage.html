@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fumart Auth | Login</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <a href="./registrationPage.html" class="top-btn">REGISTRATION</a>
+
+      <div class="card">
+        <div class="left-side"></div>
+
+        <div class="right-side">
+          <h1 class="title">Log in to Fumart</h1>
+
+          <form class="login-form">
+            <div class="input-box">
+              <label for="email-input">EMAIL ADDRESS</label>
+              <input
+                id="email-input"
+                type="email"
+                placeholder="johndoe@example.com"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="password-input">PASSWORD</label>
+              <div class="password-field">
+                <input
+                  id="password-input"
+                  type="password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <i id="togglePassword" class="ph ph-eye"></i>
+              </div>
+            </div>
+
+            <div class="remember">
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me">Remember Me</label>
+            </div>
+
+            <button type="submit" class="proceed-btn">PROCEED</button>
+          </form>
+
+          <div class="or">OR</div>
+
+          <div class="social">
+            <img src="../assets/google.png" alt="Google" />
+            <img src="../assets/apple.png" alt="Apple" />
+            <img src="../assets/facebook.png" alt="Facebook" />
+          </div>
+        </div>
+      </div>
+
+      <p class="footer">© 2021 - 2025 All Rights Reserved. Fumart</p>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
