@@ -1,9 +1,23 @@
-const passwordInput = document.getElementById("password-input");
+// PASSWORD
+const password = document.getElementById("password");
 const togglePassword = document.getElementById("togglePassword");
 
-togglePassword.addEventListener("click", () => {
-  const isHidden = passwordInput.type === "password";
-  passwordInput.type = isHidden ? "text" : "password";
-  togglePassword.classList.toggle("ph-eye");
-  togglePassword.classList.toggle("ph-eye-slash");
-});
+if (togglePassword) {
+  togglePassword.addEventListener("click", () => {
+    const isPass = password.type === "password";
+    password.type = isPass ? "text" : "password";
+    togglePassword.className = isPass ? "ri-eye-off-line" : "ri-eye-line";
+  });
+}
+
+// CONFIRM PASSWORD
+const confirmPass = document.getElementById("confirm-password");
+const toggleConfirm = document.getElementById("toggleConfirm");
+
+if (toggleConfirm) {
+  toggleConfirm.addEventListener("click", () => {
+    const isPass = confirmPass.type === "password";
+    confirmPass.type = isPass ? "text" : "password";
+    toggleConfirm.className = isPass ? "ri-eye-off-line" : "ri-eye-line";
+  });
+}
